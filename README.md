@@ -109,3 +109,21 @@ Author:
 ### 📘 License
 
 This repository is released under the [GNU General Public License v3.0](LICENSE.txt).
+
+---
+
+### 🛠️ Instalación y actualización (Consola)
+
+Requiere **.NET SDK 9** instalado.
+
+```bash
+dotnet --version
+dotnet restore
+```
+
+Para actualizar paquetes NuGet con herramienta de consola:
+
+```bash
+dotnet tool install --global dotnet-outdated-tool
+dotnet outdated -u Sii.RegistroCompraVenta/Sii.RegistroCompraVenta.csproj
+```

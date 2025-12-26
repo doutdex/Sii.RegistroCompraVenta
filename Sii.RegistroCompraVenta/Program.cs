@@ -16,7 +16,8 @@ builder
     .ConfigurePrimaryHttpMessageHandler(serviceProvider =>
     {
         IConfiguration config = serviceProvider.GetRequiredService<IConfiguration>();
-        return DigitalCertLoader.LoadCertificateAsync(config).GetAwaiter().GetResult();
+        ILogger<DigitalCertLoader> logger = serviceProvider.GetRequiredService<ILogger<DigitalCertLoader>>();
+        return DigitalCertLoader.LoadCertificateAsync(config, logger).GetAwaiter().GetResult();
     });
 
 builder.Services.AddControllers();

@@ -67,6 +67,20 @@ Use `appsettings.json` or environment variables to configure the certificate sou
 }
 ```
 
+For local development, you can use a local `.pfx` file:
+
+```json
+{
+  "Certificates": {
+    "UseLocal": true,
+    "Path": "cert/certificado.pfx",
+    "Password": ""
+  }
+}
+```
+
+If `Path` is omitted, it defaults to `cert/certificado.pfx`. If the `.pfx` has no password, leave `Password` empty or omit it.
+
 You may also define these as [Azure App Settings](https://learn.microsoft.com/en-us/azure/app-service/configure-common) if you're deploying the API to the cloud.
 
 ---

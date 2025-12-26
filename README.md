@@ -14,9 +14,10 @@ This solution allows you to query the **Registro de Compras y Ventas** from Chil
 
 | Package Reference                   | Version |
 |------------------------------------|:-------:|
-| Azure.Storage.Blobs                | 12.24.0 |
-| Microsoft.Extensions.Azure         | 1.11.0  |
-| Swashbuckle.AspNetCore             | 8.1.0   |
+| Azure.Storage.Blobs                | 12.26.0 |
+| Microsoft.Extensions.Azure         | 1.13.1  |
+| Swashbuckle.AspNetCore             | 10.1.0  |
+| Swashbuckle.AspNetCore.Annotations | 10.1.0  |
 
 ---
 
@@ -108,4 +109,3 @@ Author:
 ### 📘 License
 
 This repository is released under the [GNU General Public License v3.0](LICENSE.txt).
-

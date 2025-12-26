@@ -34,23 +34,16 @@ This project requires the following to run successfully:
 Once the app is running, you can query purchases or sales:
 
 ```bash
-curl -X GET "http://localhost:5200/api/RegistroCompraVenta/resumen?rut=11222333-8&year=2025&mes=3&operacion=compra" \
+curl -X GET "http://localhost:5225/api/RegistroCompraVenta/resumen?rut=71231117-1&year=2025&mes=12&operacion=compra" \
   -H "Accept: application/json"
 ```
 
-- `rut`: RUT of the issuer (e.g., `11222333-8`)
+- `rut`: RUT of the issuer (e.g., `71231117-1`)
 - `year`: Year between 2023 and current year
 - `mes`: Month between 1 and 12
-- `operacion`: `COMPRA` or `VENTA`
+- `operation`: `compra` or `centa`
 
 The result is grouped by document state: `REGISTRO`, `RECLAMADO`, `PENDIENTE`.
-
-<p align="center">
-  <img src="https://img001.prntscr.com/file/img001/uVo-DLcPQSKZFc9fUfT6og.png" width="100%" />
-</p>
-
-
-
 
 ---
 
@@ -95,6 +88,15 @@ Feel free to **file a new issue** with a respective title and description in the
 
 If this tool is useful, feel free to contribute ideas or improvements.
 
+Improvements runnning properly updated and tested for Net core 9 on Macos 
+<p align="center">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=EH2SYAXPWLRYG "target="_blank">
+        <img width="12%" src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
+    </a>
+</p>
+
+
+Author:
 <p align="center">
     <a href="https://www.paypal.com/donate/?hosted_button_id=PTKX9BNY96SNJ" target="_blank">
         <img width="12%" src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal">
@@ -106,3 +108,4 @@ If this tool is useful, feel free to contribute ideas or improvements.
 ### 📘 License
 
 This repository is released under the [GNU General Public License v3.0](LICENSE.txt).
+
